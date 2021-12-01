@@ -16,7 +16,10 @@ public class BankAccount{
     public double getCheckingBalance(){
         return this.checkingBalance;
     }
+    public double getSavingsBalance(){
+        return this.savingsBalance;
+    }
 
-    
+
 
 }
