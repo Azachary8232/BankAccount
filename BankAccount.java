@@ -12,6 +12,11 @@ public class BankAccount{
         numberOfAccounts++;
     }
 
+    //  getters
+    public double getCheckingBalance(){
+        return this.checkingBalance;
+    }
 
+    
 
 }
