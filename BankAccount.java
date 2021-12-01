@@ -2,10 +2,11 @@
 
 public class BankAccount{
 
-    double checkingBalance;
-    double savingsBalance;
-    static int numberOfAccounts = 0;
-    static double accountsTotal = 0;
+    private double checkingBalance;
+    private double savingsBalance;
+    private int accountNumber;
+    private static int numberOfAccounts = 0;
+    private static double accountsTotal = 0;
 
 
     public BankAccount(){
