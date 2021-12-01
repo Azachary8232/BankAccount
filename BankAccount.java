@@ -27,6 +27,25 @@ public class BankAccount{
         }
     }
 
+    public void withdraw(String account, double amount){
+        if(account == "Savings"){
+            if(savingsBalance > 0){
+                savingsBalance -= amount;
+                accountsTotal -= amount;
+            }
+        }
+        else if (account == "Checking"){
+            if(savingsBalance > 0){
+                checkingBalance -= amount;
+                accountsTotal -= amount;
+            }
+        }
+        else{
+            System.out.println("Voided transaction");
+        }
+
+    }
+
     //  getters
     public double getCheckingBalance(){
         return this.checkingBalance;
