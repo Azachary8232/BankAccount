@@ -1,4 +1,4 @@
-
+import java.util.Random;
 
 public class BankAccount{
 
@@ -46,11 +46,17 @@ public class BankAccount{
         }
     }
 
+    private int accountCreator(){
+        int num = rand.nextInt(9999999999);
+        num += 1000000000;
+        return num;
+    }
+
+    //  getters
     public double getTotalbalance(){
         return accountsTotal;
     }
 
-    //  getters
     public double getCheckingBalance(){
         return this.checkingBalance;
     }
