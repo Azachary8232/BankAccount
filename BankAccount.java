@@ -11,6 +11,7 @@ public class BankAccount{
 
     public BankAccount(){
         numberOfAccounts++;
+        accountNumber = accountCreator();
     }
 
     //  methods
