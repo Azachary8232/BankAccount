@@ -43,7 +43,10 @@ public class BankAccount{
         else{
             System.out.println("Voided transaction");
         }
+    }
 
+    public double getTotalbalance(){
+        return accountsTotal;
     }
 
     //  getters
